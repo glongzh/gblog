@@ -2,8 +2,14 @@
 
 *.sqlite3
 
+<<<<<<< HEAD
 *.log
 
 gblog/node_modules/
 
 gblog/static/bower_components/
+=======
+gblog/node_modules/
+
+gblog/bower_components/
+>>>>>>> 9ebd5363a5a13fefe1a104b5d576db577a5b1c00
