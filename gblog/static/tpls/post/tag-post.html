@@ -1,0 +1,12 @@
+<article class="card entry" ng-cloak >
+	<a class="entry-thumbnail" href="/#!/post/{[{post.id}]}/"><img ng-src="{[{ post.cover_image }]}" alt="thumbnail"></a>
+	<h1 class="entry-title">
+		<a href="/#!/post/{[{post.id}]}/">{[{ post.title }]}</a>
+	</h1>
+	<div class="entry-meta">
+		<a href="#" class="entry-more" ng-click="share()"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></a>
+		<a href="#" class="entry-author"><img ng-src="{[{ post.author.avatar }]}" alt="Author Avatar"></a>
+		<span class=""> {[{ post.created_at | date: 'MM-dd'}]} </span>
+		<a class="entry-tag" ng-repeat="t in post.tags" href="#"> {[{ t }]} </a> 
+	</div>
+</article>

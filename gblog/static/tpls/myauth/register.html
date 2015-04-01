@@ -1,0 +1,25 @@
+<form role="form" ng-submit="vm.register()">
+    <div class="form-group">
+        <label for="register__email">邮箱</label>
+        <input type="email" class="form-control" id="register__email" ng-model="vm.email" />
+    </div>
+
+    <div class="form-group">
+        <label for="register__username">用户名</label>
+        <input type="text" class="form-control" id="register__username" ng-model="vm.username"/>
+    </div>
+
+    <div class="form-group">
+        <label for="register__password">密码</label>
+        <input type="password" class="form-control" id="register__password" ng-model="vm.password" />
+    </div>
+
+    <div class="form-group">
+        <label for="register__confirm_password">确认密码</label>
+        <input type="password" class="form-control" id="register__confirm_password" ng-model="vm.confirm_password" />
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">提交</button>
+    </div>
+</form>

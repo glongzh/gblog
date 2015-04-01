@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="paper-content well paper">
+        <div class="row">
+        	<div class="col-md-1">
+        		<i class="fa fa-angle-double-left fs40 jumpback" ng-click="jumpback()"></i>
+        	</div>
+        	<div class="col-md-10">
+        		<h1 class="text-center">撰写文章</h1>
+        	</div>
+        	<div class="col-md-1"></div>
+        </div> 
+        <form role="form" ng-submit="np.submit()">
+            <div class="form-group">
+                <input class="form-control floating-label" type="text" placeholder="标题" id="post__title" ng-model="np.title" />
+            </div>
+            <div class="form-group">
+                <textarea class="form-control floating-label" id="content" placeholder="内容（支持Markdown）" id="post__content" rows="13" ng-model="np.content">
+                </textarea>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control floating-label" placeholder="标签" id="post__tags" ng-model="np.tags" />
+            </div>
+            <div class="form-group">
+                <label for="post__cover">封面图片</label>
+                <input id="post__cover" type="file" ng-file-select ng-model="np.file" />
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">
+                    保存
+                </button>
+                <a class="btn btn-info" href="javascript:void(0)" data-toggle="modal" data-target="#preview-dialog">预览</a>
+            </div>
+        </form>
+        <div id="preview-dialog" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">预览</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div marked="np.content"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

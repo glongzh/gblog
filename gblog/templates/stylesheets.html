@@ -1,0 +1,15 @@
+{% load staticfiles %}
+{% load compress %}
+
+{% compress css %}
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/bootstrap-material-design/dist/css/material.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/bootstrap-material-design/dist/css/ripples.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/ngDialog/css/ngDialog.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/ngDialog/css/ngDialog-theme-default.css' %}" />
+
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/snackbarjs/dist/snackbar.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/font-awesome/css/font-awesome.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% endcompress %}

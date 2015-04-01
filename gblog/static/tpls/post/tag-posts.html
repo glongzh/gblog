@@ -1,0 +1,12 @@
+<div class="row" ng-cloak>
+    <div id="content">
+        <main>
+        	<post ng-repeat="post in vm1.posts" post="post"></post>
+        </main>
+    </div>
+    <div ng-hide="vm1.posts && vm1.posts.length">
+    	<div class="col-xs-12 text-center empty-info">
+    		<em>呀~还没有发表东东呢~</em>
+    	</div>
+    </div>
+</div>
