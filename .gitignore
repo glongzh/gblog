@@ -1,0 +1,9 @@
+*.pyc
+
+*.sqlite3
+
+*.log
+
+gblog/node_modules/
+
+gblog/static/bower_components/
